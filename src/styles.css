@@ -11,5 +11,14 @@
 .title{
     font-size: 85px;
     color:#fff;
-    
+animation:flipTitle 2s;
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotatex(90deg)
+    }
+    to{
+        transform: rotatex(0deg)
+    }
 }
