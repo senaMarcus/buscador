@@ -4,10 +4,23 @@ import {useState} from "react"
 import {FiSearch} from "react-icons/fi"
 import './styles.css'
 
+import api from './services/api'
+
 function App() {
 
-  function handleSearch() {
-    alert ("valor do input " + input)
+  async function handleSearch() {
+    if (input === '') {
+      alert ("Preencha o CEP!")
+      return;
+    }
+
+    try {
+      const response = await api.get(`${input}/json`)
+
+    } catch {
+      alert("Ops... Algo de errado não está certo! Certeza que estamos no mesmo planeta?  ")
+      setInput("") // depois do alerta, ele limpa o campo do input novamente
+    }
   }
 
   const [input, setInput] = useState('')
