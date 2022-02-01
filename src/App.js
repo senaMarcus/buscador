@@ -46,7 +46,8 @@ function App() {
 
      </div>
 
-     <main className="main">
+     {Object.keys(cep).length > 0 && (              //através do OBJECT KEYS estou acessando meu objeto CEP (api) e verificando se existe algum dado la dentro, e a partir disso... consumindo
+      <main className="main">
        <h2>Cep: {cep.cep}</h2>
 
        <span>{cep.logradouro}</span>
@@ -54,6 +55,7 @@ function App() {
        <span>{cep.bairro}</span>
        <span>{cep.localidade} -{cep.uf}</span>
      </main>
+     )}  
     </div>
   );
 }
