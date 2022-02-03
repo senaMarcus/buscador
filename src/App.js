@@ -3,6 +3,7 @@ import {useState} from "react"
 
 import {FiSearch} from "react-icons/fi"
 import './styles.css'
+import {Title} from './components/Title'
 
 import api from './services/api'
 
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className="container">
-     <h1 className="title">Buscador de CEP</h1>
+     <Title />
      <div className="containerInput">
 
        <input type="text"

@@ -8,20 +8,6 @@
     background: linear-gradient(#121212,#212b46);
 }
 
-.title{
-    font-size: 85px;
-    color:#fff;
-animation:flipTitle 2s;
-}
-
-@keyframes flipTitle {
-    from{
-        transform: rotatex(90deg)
-    }
-    to{
-        transform: rotatex(0deg)
-    }
-}
 
 .containerInput{
     background-color: rgba(255,255,255,0.2);
