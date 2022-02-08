@@ -24,7 +24,7 @@ function App() {
       setInput("")
 
     } catch {
-      alert("Ops... Algo de errado não está certo! Certeza que estamos no mesmo planeta?  ")
+      alert("Ops... Algo de errado não está certo! Tem certeza que estamos na mesma dimensão ou os valores digitados foram incorretos?  ")
       setInput("") // depois do alerta, ele limpa o campo do input novamente
     }
   }
